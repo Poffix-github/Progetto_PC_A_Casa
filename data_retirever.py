@@ -21,7 +21,6 @@ async def data_retriever(topic: int, model):
 
     htmls = [req.text for req in reqs]
 
-    # TODO: parallelize this loop for performance
     # parse all files and get names and prizes of all products
     for html, site in zip(htmls, sites):
         all_prices += [(site.__class__.__name__, site.parser(html))]

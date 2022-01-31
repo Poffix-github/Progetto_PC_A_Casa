@@ -13,6 +13,7 @@ class Site:
         self.payload[self.__key] = self.__topics[index] + model
 
     def parser(self, html):
+        pass
 
 
 class ComputerMilano(Site):
@@ -240,16 +241,3 @@ class SiteObjs:
                         payload={'item': '24'})
 
     sites = [computer_milano, computer_valley, drako, hardware_planet, hwonline, nexths, pc_ok, vg_informatica]
-
-
-
-
-
-
-
-
-
-
-
-
-
