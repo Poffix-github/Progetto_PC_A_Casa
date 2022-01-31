@@ -1,6 +1,8 @@
 class Site:
 
     def __init__(self, url, topics, query='', payload=None, headers=None):
+        #if headers is None:
+         #   headers = {}
         self.url_base: str = url
         self.payload: dict[str, str] = payload
         self.headers: dict[str, str] = headers
@@ -10,10 +12,13 @@ class Site:
     def set_url(self, index, model):
         self.payload[self.__key] = self.__topics[index] + model
 
+    def parser(self, html):
+
 
 class ComputerMilano(Site):
 
-    def parser(self, html, prices):
+    def parser(self, html):
+        prices = []
         doc = html.split('<h2 class="product-name"><')
         for elem in doc[1:]:
             title = elem[elem.find('>') + 1:elem.find('<')]
@@ -33,7 +38,8 @@ class ComputerMilano(Site):
 
 class ComputerValley(Site):
 
-    def parser(self, html, prices):
+    def parser(self, html):
+        prices = []
         doc = html.split('data-price="')
         for elem in doc[1:]:
             if elem.find("Non disponibile") == -1:
@@ -48,9 +54,10 @@ class ComputerValley(Site):
 
 class Drako(Site):
 
-    def parser(self, html, prices):
+    def parser(self, html):
         # strange codec on euro (€) symbol, if you include it in the string the program doesn't recognize it and .split()
         # doesn't work
+        prices = []
         doc = html.split('<div class="product_title"><a title="')
         for elem in doc[1:]:
             if elem.find(">disponibile") != -1:
@@ -72,14 +79,11 @@ class Drako(Site):
         prices.sort()
         return prices
 
-    # this site doesn't have a query keyword nor a payload
-    def set_url(self, index, model):
-        pass
-
 
 class HardwarePlanet(Site):
 
-    def parser(self, html, prices):
+    def parser(self, html):
+        prices = []
         doc = html.split('<div class="item col-xs-6 col-sm-4 col-md-4 col-lg-4">')
         for elem in doc[1:]:
             if elem.find("Esaurito") == -1:
@@ -99,7 +103,8 @@ class HardwarePlanet(Site):
 
 class HWOnline(Site):
 
-    def parser(self, html, prices):
+    def parser(self, html):
+        prices = []
         doc = html.split('<div class="product-list">')[-1]
         doc = doc.split('title     = "')
         for elem in doc[1:]:
@@ -115,7 +120,8 @@ class HWOnline(Site):
 
 class Nexths(Site):
 
-    def parser(self, html, prices):
+    def parser(self, html):
+        prices = []
         # strange codec on euro (€) symbol, if you include it in the string the program doesn't recognize it and .split()
         # doesn't work
         doc = html.split('<p class="gallery-descrbreve">')
@@ -131,14 +137,15 @@ class Nexths(Site):
                 prices += [(float(price), title)]
         return prices
 
-    # this site doesn't have a query keyword nor a payload
+    # this site doesn't have a query keyword
     def set_url(self, index, model):
         pass
 
 
 class PcOk(Site):
 
-    def parser(self, html, prices):
+    def parser(self, html):
+        prices = []
         doc = html.split('<h3>')
         for elem in doc[1:]:
             title = elem[0:elem.find(" <")]
@@ -160,7 +167,8 @@ class PcOk(Site):
 
 class VgInformatica(Site):
 
-    def parser(self, html, prices):
+    def parser(self, html):
+        prices = []
         doc = html.split('<div class="featured-info mb0">')
         for elem in doc[1:]:
             elem = elem.lstrip("\n\t<")
@@ -180,6 +188,7 @@ class VgInformatica(Site):
 
 
 class SiteObjs:
+    """contains one object for each site"""
 
     computer_milano = ComputerMilano(
                         url="https://computer.milano.it/catalogsearch/result/index/",
@@ -196,7 +205,8 @@ class SiteObjs:
     drako = Drako(
                         url="https://www.drako.it/drako_catalog/advanced_search_result.php",
                         topics=["", "geforce rtx ", "intel core "],
-                        query='keywords')
+                        query='keywords',
+                        payload={})
 
     hardware_planet = HardwarePlanet(
                         url="https://www.hardware-planet.it/ricerca",
