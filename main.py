@@ -1,14 +1,14 @@
-import asyncio
+from asyncio import run
 from data_retirever import data_retriever
 from archiver import archiver
 
 
 def main():
     topics = ["", "nvidia geforce rtx ", "intel core "]
-    topic = 0
-    model = "fractal design meshify"
+    topic = 2
+    model = "i5-12"
 
-    data = asyncio.run(data_retriever(topic, model))
+    data = run(data_retriever(topic, model))
 
     new_products = []
     file_name = topics[topic] + model
