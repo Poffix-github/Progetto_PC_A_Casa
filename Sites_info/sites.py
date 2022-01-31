@@ -1,8 +1,6 @@
 class Site:
 
     def __init__(self, url, topics, query='', payload=None, headers=None):
-        #if headers is None:
-         #   headers = {}
         self.url_base: str = url
         self.payload: dict[str, str] = payload
         self.headers: dict[str, str] = headers
@@ -56,8 +54,8 @@ class ComputerValley(Site):
 class Drako(Site):
 
     def parser(self, html):
-        # strange codec on euro (€) symbol, if you include it in the string the program doesn't recognize it and .split()
-        # doesn't work
+        # strange codec on euro (€) symbol, if you include it in the string the program doesn't recognize it and
+        # .split() doesn't work
         prices = []
         doc = html.split('<div class="product_title"><a title="')
         for elem in doc[1:]:
@@ -101,7 +99,7 @@ class HardwarePlanet(Site):
                 prices += [(float(price), title)]
         return prices
 
-
+# TODO: aggiungi controllo per disponibilità (pallino verde, arancione o rosso)
 class HWOnline(Site):
 
     def parser(self, html):
@@ -123,8 +121,8 @@ class Nexths(Site):
 
     def parser(self, html):
         prices = []
-        # strange codec on euro (€) symbol, if you include it in the string the program doesn't recognize it and .split()
-        # doesn't work
+        # strange codec on euro (€) symbol, if you include it in the string the program doesn't recognize it and
+        # .split() doesn't work
         doc = html.split('<p class="gallery-descrbreve">')
         for elem in doc[1:]:
             if elem.find("DISPONIBILE in pronta consegna") != -1:

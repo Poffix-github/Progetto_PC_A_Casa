@@ -4,8 +4,8 @@ from Sites_info.sites import SiteObjs
 
 
 async def data_retriever(topic: int, model):
-    """Retrieves the information about each site and return a list of tuples. The first element of each tulpe is a string
-    with the name of a site, the second element contains a list of products from that site."""
+    """Retrieves the information about each site and return a list of tuples. The first element of each tulpe is a
+    string with the name of a site, the second element contains a list of products from that site. """
     # NEW
     sites = SiteObjs().sites
     all_prices = []
