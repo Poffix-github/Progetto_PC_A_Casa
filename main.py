@@ -1,4 +1,3 @@
-# TODO: delete notes.txt from github
 from asyncio import run
 from data_retirever import data_retriever
 from archiver import archiver
