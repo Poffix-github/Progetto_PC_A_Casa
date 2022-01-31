@@ -1,0 +1,14 @@
+Computer_Milano
+    (74.51, 'be quiet! Pure Power 11 400W CM - BN296')
+Computer_Valley
+Drako
+Hardware_Planet
+    (60.16, 'Alimentatore Pc Be Quiet Pure Power 11 400W')
+    (69.38, 'Alimentatore per PC Be Quiet Pure Power 11 CM 400W')
+HWonline
+    (68.05, 'BE QUIET! ALIMENTATORE ATX PURE POWER 11 CM SEMI-MODULAR 400W 80PLUS GOLD')
+Nexths
+PC_ok
+VG_informatica
+    (62.0, 'be quiet! Pure Power 11 400W alimentatore per computer 20 4 pin ATX ATX Nero')
+    (70.5, 'be quiet! Pure Power 11 400W CM alimentatore per computer 20 4 pin ATX ATX Nero')

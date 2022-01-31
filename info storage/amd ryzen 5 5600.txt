@@ -1,0 +1,44 @@
+Computer_Milano
+    (291.92, 'AMD CPU  RYZEN 5 5600G 3.9GHz(4.4GHz boost) 6CORE 16MB 100-100000252BOX AM4 65W BOX - Garanzia 3 anni - 730143313414')
+    (316.15, 'AMD Ryzen 5 5600G processore 3,9 GHz 16 MB L3 Scatola cod. 100-100000252BOX')
+    (324.19, 'AMD CPU AMD RYZEN 5 5600X 4.6GHZ 6CORE 35MB 100-100000065BOX AM4 65W BOX - Garanzia 3 anni - 0730143312042')
+    (343.45, 'AMD Ryzen 5 5600G processore 3,9 GHz 16 MB L2 &amp; L3 cod. 100-000000252')
+    (358.95, 'AMD Ryzen 5 5600X processore 3,7 GHz 32 MB L3 Scatola cod. 100-100000065BOX')
+Computer_Valley
+    (257.0, 'AMD Ryzen 5 5600G 6 Core 3.9GHz 16MB skAM4 Box')
+    (315.0, 'AMD Ryzen 5 5600X 6 Core 3.7GHz 32MB skAM4 Box')
+Drako
+    (319.9, 'AMD Ryzen 5 5600G 3,9 GHz (Cezanne) Socket AM4 - Boxato con Cooler Wraith Stealth')
+Hardware_Planet
+    (110.35, 'Motherboard Msi AM4 B550-A PRO')
+    (116.56, 'Motherboard Msi AM4 MPG B550 GAMING PLUS')
+    (172.18, 'Motherboard Asus AM4 ROG STRIX B550-F GAMING')
+    (188.29, 'Motherboard Asus AM4 ROG STRIX B550-F GAMING WI-FI')
+    (245.82, 'AMD Cpu Ryzen 5 5600G Box AM4 (3.900GHz) with Wraith Stealth cooler')
+    (295.92, 'Amd Cpu AM4 Ryzen 5 5600X box Wraith Stealth Cooler')
+HWonline
+    (49.13, 'Thermalright ARO-M14G ventola per PC Processore Refrigeratore 14 cm Alluminio, Nero, Bianco')
+    (49.78, 'Thermalright ARO-M14O ventola per PC Processore Refrigeratore 14 cm Alluminio, Nero, Rosso, Bianco')
+    (118.35, 'MSI B550-A PRO scheda madre AMD B550 Presa AM4 ATX')
+    (131.41, 'MSI MPG B550 Gaming Plus AMD B550 Presa AM4 ATX')
+    (193.26, 'ASUS ROG STRIX B550-F GAMING(WI-FI) AMD B550 Presa AM4 ATX')
+    (223.69, 'Thermalright Turbo Right 360C Processore Set refrigerante 12 cm Nero')
+    (292.42, 'AMD Ryzen 5 5600G processore 3,9 GHz 16 MB L3 Scatola')
+    (304.68, 'AMD Ryzen 5 5600G processore 3,9 GHz 16 MB L3 Scatola')
+    (340.26, 'AMD Ryzen 5 5600X processore 3,7 GHz 32 MB L3')
+    (342.95, 'AMD Ryzen 5 5600X processore 3,7 GHz 32 MB L3 Scatola')
+    (351.21, 'CPU AMD RYZEN 5 5600X BOX AM4 3.6GHz con WRAITH STEALTH COOLER 100-10000006')
+    (712.51, 'MSI PRO DP20Z 5M DDR4-SDRAM 5600G Mini PC AMD Ryzen 5 8 GB 256 GB SSD Windows 10 Home Nero')
+    (740.22, 'MSI PRO DP20Z 5M-007DE PC 5600G Mini PC AMD Ryzen 5 8 GB 256 GB SSD Windows 10 Pro Nero')
+    (748.97, 'MSI PRO DP20Z 5M DDR4-SDRAM 5600G Mini PC AMD Ryzen 5 8 GB 256 GB SSD Windows 10 Pro Nero')
+    (751.19, 'MSI PRO DP20Z 5M DDR4-SDRAM 5600G Mini PC AMD Ryzen 5 8 GB 256 GB SSD Windows 10 Pro Nero')
+    (857.5, 'HP ProDesk 405 G8 DDR4-SDRAM 5600G SFF AMD Ryzen 5 8 GB 256 GB SSD Windows 11 Pro PC Nero')
+    (943.83, 'HP ProDesk 405 G8 Small Form Factor PC DDR4-SDRAM 5600G AMD Ryzen 5 16 GB 512 GB SSD')
+    (948.33, 'Lenovo IdeaCentre Gaming5 DDR4-SDRAM 5600G Tower AMD Ryzen 5 8 GB 512 GB SSD Windows 10 Home PC Nero')
+Nexths
+    (295.0, 'AMD Ryzen 5 5600G 6 Core 3.9GHz 16MB skAM4 Box')
+    (345.0, 'AMD Ryzen 5 5600X 6 Core 3.7GHz 32MB skAM4 Box')
+PC_ok
+    (359.9, 'AMD RYZEN 5 5600-X')
+VG_informatica
+    (317.0, 'AMD Ryzen™ 5 5600G')

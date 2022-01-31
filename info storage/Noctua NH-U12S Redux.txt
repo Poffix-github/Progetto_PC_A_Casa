@@ -1,0 +1,9 @@
+Computer_Milano
+Computer_Valley
+Drako
+Hardware_Planet
+HWonline
+    (52.59, 'Noctua NH-U12S redux Processore Refrigeratore 12 cm Grigio, Acciaio inossidabile')
+Nexths
+PC_ok
+VG_informatica

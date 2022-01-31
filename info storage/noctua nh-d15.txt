@@ -1,0 +1,26 @@
+Computer_Milano
+    (190.79, 'Noctua NH-D15 SE-AM4 - NH-D15 SE-AM4')
+    (194.71, 'Noctua NH-D15 ventola per PC Processore Refrigeratore 14 cm cod. NH-D15')
+Computer_Valley
+    (98.0, 'Noctua NH-D15S Dissipatore per CPU')
+    (109.0, 'Noctua NH-D15 SE-AM4 Special Edition Dissipatore per CPU')
+    (109.0, 'Noctua NH-D15 Dissipatore per CPU')
+    (114.0, 'Noctua NH-D15S Chromax Black Dissipatore per CPU')
+    (126.0, 'Noctua NH-D15  ed.chromax.black.swap Dissipatore Per CPU')
+Drako
+Hardware_Planet
+    (96.29, 'Noctua Nh-D15S Dissipatore Per Cpu')
+    (107.01, 'Noctua NH-D15 Dissipatore per CPU')
+HWonline
+    (7.04, 'Noctua NM-AM4 accessori di raffreddamento hardware')
+    (95.59, 'Noctua NH-D15S ventola per PC Processore Refrigeratore 14 cm Rame, Metallico')
+    (106.2, 'Noctua NH-D15 SE-AM4 ventola per PC Processore Refrigeratore Beige, Marrone, Acciaio inossidabile')
+    (106.2, 'Noctua NH-D15S chromax.black Processore Refrigeratore 14 cm Nero 1 pz')
+    (106.2, 'Noctua NH-D15 ventola per PC Processore Refrigeratore 14 cm')
+    (116.83, 'Noctua NH-D15 chromax.black Processore Refrigeratore 15 cm Nero')
+Nexths
+PC_ok
+VG_informatica
+    (98.0, 'Noctua NH-D15S computer cooling system Processore Refrigeratore 14 cm Rame, Metallico')
+    (113.5, 'Noctua NH-D15 SE-AM4 computer cooling system Processore Refrigeratore Beige, Marrone, Acciaio inossidabile')
+    (113.5, 'Noctua NH-D15S chromax.black Processore Refrigeratore 14 cm Nero 1 pz')

@@ -1,0 +1,30 @@
+Computer_Milano
+    (187.05, 'ASUS &quot;PRIME H670-PLUS D4&quot; - 90MB18W0-M0EAY0')
+    (243.42, 'ASUS &quot;TUF GAMING H670-PRO WIFI D4&quot; - 90MB1900-M0EAY0')
+Computer_Valley
+    (130.0, 'Cooler Master Gaming MH670 Cuffie con Microfono Wireless')
+    (202.0, 'Asus TUF Gaming H670-Pro Wi-Fi D4 Intel H670 4*DDR4 4*M.2 4*SataIII sk1700 HDMI/DP ATX')
+Drako
+Hardware_Planet
+    (156.27, 'ASUS 1200 PRIME H670-PLUS D4')
+    (208.56, 'ASUS 1200 TUF H670-PRO GAMING WiFi D4')
+HWonline
+    (88.87, 'Epson CP03RTBSH670 estensione della garanzia')
+    (131.87, 'Epson CP04RTBSH670 estensione della garanzia')
+    (152.24, 'Asrock H670M Pro RS Intel H670 LGA 1700 micro ATX')
+    (176.88, 'ASUS MB PRIME H670-PLUS D4, LGA 1700, H670,')
+    (180.95, 'Asrock H670 PG Riptide Intel H670 LGA 1700 ATX')
+    (199.68, 'Asrock H670 Steel Legend Intel H670 LGA 1700 ATX')
+    (198.63, 'Benq 5J.JEL05.001 lampada per proiettore 210 W P-VIP')
+    (211.16, 'Asrock H670M-ITX/ax Intel H670 LGA 1700 mini ITX')
+    (219.78, 'Epson CP05RTBSH670 estensione della garanzia')
+    (237.53, 'ASUS MB TUF GAMING H670-PRO WIFI D4, LGA 1700, H670')
+    (258.54, 'Epson CP03OSSWH670 estensione della garanzia')
+    (413.66, 'Epson CP04OSSWH670 estensione della garanzia')
+    (1470.43, 'Epson EB-536Wi')
+Nexths
+    (114.9, 'Cooler Master Gaming MH670 Cuffie con Microfono Wireless')
+    (185.9, 'Asus TUF Gaming H670-Pro Wi-Fi D4 Intel H670 4*DDR4 4*M.2 4*SataIII sk1700 HDMI/DP ATX')
+PC_ok
+VG_informatica
+    (237.0, 'ASUS TUF GAMING H670-PRO WIFI D4 Intel H670 LGA 1700 ATX')

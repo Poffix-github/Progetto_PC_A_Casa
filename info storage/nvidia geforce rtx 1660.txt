@@ -1,0 +1,10 @@
+Computer_Milano
+Computer_Valley
+Drako
+Hardware_Planet
+HWonline
+    (648.0, 'ZOTAC GAMING GeForce RTX 2060 6GB GDDR6')
+    (948.33, 'Lenovo IdeaCentre Gaming5 DDR4-SDRAM 5600G Tower AMD Ryzen 5 8 GB 512 GB SSD Windows 10 Home PC Nero')
+Nexths
+PC_ok
+VG_informatica

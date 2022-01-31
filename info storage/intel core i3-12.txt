@@ -1,0 +1,19 @@
+Computer_Milano
+    (124.35, 'Intel i3-12100F - CM8071504651013')
+    (138.01, 'Intel i3-12100F - BX8071512100F')
+    (163.81, 'Intel i3-12100 - CM8071504651012')
+    (166.11, 'Intel i3-12100 - BX8071512100')
+    (190.82, 'Intel &quot;CORE I3-12300 3.50GHZ SKTLGA1700 12.00MB CACHE TRAY&quot; - CM8071504650906')
+Computer_Valley
+    (155.0, 'Intel Core i3-12100 4 Core 3.3GHz 5MB sk1700 Box')
+Drako
+Hardware_Planet
+    (110.2, 'Intel Cpu Core i3 12100F 3.30Ghz 12M Alder Lake-S Box')
+    (170.89, 'Intel Cpu Core i5 12400F 2.50Ghz 18M Alder Lake-S Tray')
+    (179.08, 'Intel Cpu Core i5 12400F 2.50Ghz 18M Alder Lake-S Box')
+HWonline
+    (158.63, 'INTEL CPU 12TH GEN ALDER LAKE CORE I3-12100 3.30GHZ LGA1700 12MB CACHE BOXED')
+Nexths
+    (149.0, 'Intel Core i3-12100 4 Core 3.3GHz 5MB sk1700 Box')
+PC_ok
+VG_informatica

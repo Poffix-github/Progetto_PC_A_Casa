@@ -1,0 +1,9 @@
+#TODO[medium] add control for old products no longer avaliable (opposite of current compare section in "archiver.py")
+#TODO[quality] generalize 'Grab_info' function (create site class for storing its url etc.)
+#TODO[new feature] allow multiple searches in one go
+#TODO[new feature] make research interactive
+
+#BUG[archiver.py] if the file doesn't exist or is empty variable 'new_tot' returns zero but should return the number of all new products
+
+there is probably a problem with the encoding of the text retireved from the sites (e.g. see Nexths split string)
+optimize using 'async' isntead of threadin
