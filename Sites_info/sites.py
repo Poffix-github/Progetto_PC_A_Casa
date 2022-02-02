@@ -4,11 +4,11 @@ class Site:
         self.url_base: str = url
         self.payload: dict[str, str] = payload
         self.headers: dict[str, str] = headers
-        self.__topics: list[str] = topics
+        self.topics: list[str] = topics
         self.__key = query
 
     def set_url(self, index, model):
-        self.payload[self.__key] = self.__topics[index] + model
+        self.payload[self.__key] = self.topics[index] + model
 
     def parser(self, html):
         pass
@@ -99,7 +99,7 @@ class HardwarePlanet(Site):
                 prices += [(float(price), title)]
         return prices
 
-# TODO: aggiungi controllo per disponibilità (pallino verde, arancione o rosso)
+
 class HWOnline(Site):
 
     def parser(self, html):
@@ -107,13 +107,14 @@ class HWOnline(Site):
         doc = html.split('<div class="product-list">')[-1]
         doc = doc.split('title     = "')
         for elem in doc[1:]:
-            title = elem[0:elem.find(' (')]
+            if elem.find('class="availability-dot availability-dot-unavailable"') == -1:
+                title = elem[0:elem.find(' (')]
 
-            if title.find("Computer portatile") == -1:
-                elem = elem.split('ce" content="')[1]
-                price = elem[0:elem.find('"')]
+                if title.find("Computer portatile") == -1:
+                    elem = elem.split('ce" content="')[1]
+                    price = elem[0:elem.find('"')]
 
-                prices += [(float(price), title)]
+                    prices += [(float(price), title)]
         return prices
 
 
@@ -136,9 +137,9 @@ class Nexths(Site):
                 prices += [(float(price), title)]
         return prices
 
-    # this site doesn't have a query keyword
+    # this site is fucked up
     def set_url(self, index, model):
-        pass
+        self.url_base += self.topics[index] + model
 
 
 class PcOk(Site):
@@ -221,10 +222,12 @@ class SiteObjs:
                         payload={'controller': 'search', 'order': 'product.price.asc'})
 
     nexths = Nexths(
-                        url="https://www.nexths.it/products/getSkuFromLev/rpp/48/page/1/sort/prezzoa/query/",
-                        topics=["", "geforce rtx ", "intel core "],
+                        url="https://www.nexths.it/products/getSkuFromLev/rpp/48/page/1/sort/prezzoa/l1/",
+                        topics=["", "Schede%20Video/query/geforce rtx ", "Cpu/query/intel core "],
                         headers={'User-Agent': 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, ''like '
                                                'Gecko) Chrome/56.0.2924.76 ''Safari/537.36'})
+    # https://www.nexths.it/products/getSkuFromLev/query/geforce%20rtx%203070/l1/Schede%20Video/page/1/rpp/48/sort
+    # /prezzoa
 
     pc_ok = PcOk(
                         url="https://www.pcokomegna.it/s",

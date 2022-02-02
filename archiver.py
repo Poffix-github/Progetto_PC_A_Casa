@@ -1,3 +1,4 @@
+# TODO: convert all storage to JSON files and dictionaties (in code)
 # TODO add control for old products no longer avaliable (opposite of current compare section in "archiver.py")
 from os.path import isfile
 
