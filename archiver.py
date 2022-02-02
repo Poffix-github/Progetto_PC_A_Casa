@@ -8,9 +8,9 @@ def archiver(name, data, new_products):
     old_data = []
     file_name = './info storage/' + name + '.txt'
 
+    # if the file doesn't exist create a new one
     if not isfile(file_name):
-        f = open(file_name, 'w')
-        f.close()
+        open(file_name, 'w').close()
 
     with open(file_name, 'r') as f:
         # site
