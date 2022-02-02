@@ -5,7 +5,7 @@ from archiver import archiver
 
 
 def main():
-    print('Benvenuto a Progetto PC a Casa')
+    print('Benvenuto a Progetto PC a Casa (digita "help" per la lista dei comandi')
 
     cond = True
     while cond:
