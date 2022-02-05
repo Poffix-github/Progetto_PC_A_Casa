@@ -1,7 +1,5 @@
 {
-  "topics": {
-    "custom": "",
-    "nvidia rtx graphics cards":  "nvidia geforce rtx ",
-    "intel processors":  "intel core "
-  }
+  "custom": "",
+  "nvidia rtx graphics cards":  "nvidia geforce rtx ",
+  "intel processors":  "intel core "
 }

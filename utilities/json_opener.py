@@ -1,6 +1,6 @@
-import json
+from json import load
 
 
 def read(path):
     with open(path, 'r') as f:
-        return json.load(f)
+        return load(f)

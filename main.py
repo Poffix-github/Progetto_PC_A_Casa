@@ -1,9 +1,15 @@
 from os import listdir
 from asyncio import run
 from os.path import isfile
-from data_retirever import data_retriever
-from archiver import archiver
+import data_retriever
+import archiver
 import clerk
+import search
+from utilities import json_opener, get_full_name
+
+# GLOBAL VARIABLES
+search_data_path = './data/search_data.json'
+search_log_path = './data/search_log.json'
 
 
 def main():
@@ -14,10 +20,11 @@ def main():
         command = input()
         # list of all commands
         if command == 'help' or command == 'h':
-            print("'quit' or 'q':    end session\n"
-                  "'new' or 'n':    search for new product\n"
-                  "'list':    lists all files currently available\n"                  
-                  "'open name_of_file':    opens the file if it exists")
+            print("'quit' or 'q':          end session\n"
+                  "'new' or 'n':           search for new product\n"
+                  "'list':                 lists all files currently available\n"                  
+                  "'open name_of_file':    opens the file if it exists\n"
+                  "'src all':              launches all searches ever done")
         # end of session
         elif command == 'quit' or command == 'q':
             cond = False
@@ -33,22 +40,15 @@ def main():
                 with open(file, 'r') as f:
                     print(f.read())
         elif command == 'new' or command == 'n':
-            topic, model, file_name = clerk.first_contact()
+            topic, model, full_name = clerk.first_contact(search_data_path)
+            search.search(topic, model, full_name, search_log_path)
+        elif command == 'src all':
+            searches = json_opener.read(search_log_path)
 
-            data = run(data_retriever(topic, model))
-
-            new_products = []
-            new_num = archiver(file_name, data, new_products)
-
-            # new products pretty printing
-            print(f"ricerca per: {file_name}\n"
-                  f"numero di prodotti nuovi: {new_num}")
-            for (site, items) in new_products:
-                if items:
-                    print(site + ":")
-                    for product in items:
-                        print('    ' + str(product))
-                    print()
+            for key in searches:
+                full_name = get_full_name.full_name(search_data_path, key, searches[key])
+                search.search(searches[key], key, full_name, search_log_path)
+            print("All done! (◕‿◕)")
         else:
             print('comando sconosciuto')
 

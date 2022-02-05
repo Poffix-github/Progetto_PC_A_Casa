@@ -1,9 +1,11 @@
-# TODO: convert all storage to JSON files and dictionaties (in code)
-# TODO add control for old products no longer avaliable (opposite of current compare section in "archiver.py")
+# TODO: convert all storage to JSON files and dictionaries (in code)
+# TODO: add control for old products no longer available (opposite of current compare section in "archiver.py")
+# TODO: if the file doesn't exist or is empty variable 'new_tot' returns zero but should return the number of all new products
+from utilities import json_opener, json_dumper
 from os.path import isfile
 
 
-def archiver(name, data, new_products):
+def products_dump(name, data, new_products):
     # transform file into a list
     old_data = []
     file_name = './info storage/' + name + '.txt'
@@ -45,3 +47,14 @@ def archiver(name, data, new_products):
         f.writelines(new_data)
 
     return new_tot
+
+
+def add(key, elem, filename):
+    """Adds one element to a json file"""
+
+    data = json_opener.read(filename)
+
+    if key not in data:
+        data[key] = elem
+
+    json_dumper.write(filename, data)

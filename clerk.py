@@ -1,9 +1,8 @@
-from utilities.json_opener import read
+from utilities import json_opener
 
 
-def first_contact():
-    presets = read('./data/search_data.json')['topics']
-
+def first_contact(filename):
+    presets = json_opener.read(filename)
     keys = []
     while True:
         print("scegli una categoria di ricerca scrivendo il numero corrispondente:")
