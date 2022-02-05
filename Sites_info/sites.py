@@ -110,7 +110,7 @@ class HWOnline(Site):
             if elem.find('class="availability-dot availability-dot-unavailable"') == -1:
                 title = elem[0:elem.find('"')]
 
-                if title.find("Computer portatile") == -1:
+                if title.find("Computer portatile") == -1 and title.find('ce" content="') != -1:
                     # TODO: if the site doesn't find any products this launches 'IndexOutOfBoundException'
                     elem = elem.split('ce" content="')[1]
                     price = elem[0:elem.find('"')]
