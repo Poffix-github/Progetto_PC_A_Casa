@@ -15,7 +15,7 @@ async def data_retriever(topic: int, model):
         site.set_url(topic, model)
 
     # get all html files
-    async with httpx.AsyncClient(timeout=15.0) as client:
+    async with httpx.AsyncClient(timeout=None) as client:
         tasks = (client.get(url=site.url_base, params=site.payload, headers=site.headers) for site in sites)
         reqs = await asyncio.gather(*tasks)
 
