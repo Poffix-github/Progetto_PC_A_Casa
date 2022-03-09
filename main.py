@@ -1,8 +1,5 @@
 from os import listdir
-from asyncio import run
 from os.path import isfile
-import data_retriever
-import archiver
 import clerk
 import search
 from utilities import json_opener, get_full_name

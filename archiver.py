@@ -1,6 +1,7 @@
 # TODO: convert all storage to JSON files and dictionaries (in code)
 # TODO: add control for old products no longer available (opposite of current compare section in "archiver.py")
-# TODO: if the file doesn't exist or is empty variable 'new_tot' returns zero but should return the number of all new products
+# TODO: if the file doesn't exist or is empty variable 'new_tot' returns zero but should return the number of all new
+#  products
 from utilities import json_opener, json_dumper
 from os.path import isfile
 
