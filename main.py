@@ -3,6 +3,7 @@ from os.path import isfile
 import clerk
 import search
 from utilities import json_opener, get_full_name
+from multiprocessing import Process, Lock
 
 # GLOBAL VARIABLES
 search_data_path = './data/search_data.json'
@@ -42,9 +43,17 @@ def main():
         elif command == 'src all':
             searches = json_opener.read(search_log_path)
 
+            lock = Lock()
+            processes = []
             for key in searches:
                 full_name = get_full_name.full_name(search_data_path, key, searches[key])
-                search.search(searches[key], key, full_name, search_log_path)
+                processes.append(Process(target=search.search, args=(lock, searches[key], key, full_name, search_log_path)))
+
+            for p in processes:
+                p.start()
+            for p in processes:
+                p.join()
+
             print("All done! (◕‿◕)")
         else:
             print('comando sconosciuto')
